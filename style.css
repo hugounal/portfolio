@@ -12,13 +12,13 @@
 }
 
 [data-theme="dark"] {
-  --primary-color:  #f07f3e;
-  --primary-variant: #F77F00;
-  --secondary-color:  #D62828;
-  --on-primary: #2186bd;
+  --primary-color:  #003049;
+  --primary-variant: #ffffff;
+  --secondary-color:  #ffffff;
+  --on-primary: #003049;
   --on-background: #EAE2B7;
   --on-background-alt: rgba(255, 255, 255, 0.7);
-  --background: #EAE2B7;
+  --background: #FCBF49;
 }
 
 * {
@@ -67,7 +67,7 @@
 .navLinks{
   -webkit-text-stroke-width: 1.2px;
   -webkit-text-stroke-color: var(--primary-color);
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: var(--on-primary);
   float: right;
   padding: 0;
   font-size: 26px;
@@ -374,7 +374,7 @@ h3{
   background-color: var(--primary-color);
   margin-bottom: 60px;
   border: none;
-  color:var(--on-primary);
+  color:var(--secondary-color);
   width: 16rem;
   height: 3rem;
   border-radius: 40px;
@@ -463,6 +463,7 @@ h3{
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-right: 10%;
 }
 
 
@@ -509,7 +510,7 @@ input[type=text]:focus {
 .download{
   background-color: var(--primary-color);
   margin-bottom: 140px;
-  color: var(--on-primary);
+  color: var(--secondary-color);
   width: 80%;
   height: 60px;
   border-radius: 10px;
