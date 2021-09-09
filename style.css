@@ -836,6 +836,13 @@ animation: appear 2s ease forwards 3s ;
   
 }
 
+ #blenderProjects{
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
 .projectImg{
   width: 100%;
   height: auto;
@@ -868,8 +875,9 @@ animation: appear 2s ease forwards 3s ;
 }
 .descriptionProject{
   position: relative;
-  width: 50%;
+  width: 80%;
   margin-left: 5%;
+  margin-right: 300px;
 
 }
 p{
@@ -896,9 +904,6 @@ p{
 
 }
 
-.porto{
-  
-}
 
 .porto img{
   width: 250px;
@@ -909,6 +914,134 @@ p{
   background-color: var(--background);
   color: var(--on-primary);
 }
+
+
+/* Blender Projects Slides  */
+
+.sliderx{
+  width: 550px;
+  height: 550px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slidesx{
+  width: 500%;
+  height: 400px;
+  display: flex;}
+
+.slidesx input{
+  display: none;
+}
+
+.slidex{
+  width: 20%;
+  transition: 1s;
+  z-index: 1000;
+}
+
+.slidex img{
+  width: 400px;
+  height: 50%; 
+  
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 400px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  z-index: 9000;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: -80%;
+}
+
+
+/*css for automatic navigation*/
+#worldCreationImg{
+  height: 70%;
+}
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  margin-top:360px;
+  background:none;
+  z-index: 9001;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background: #40D3DC;
+}
+
+.lowPoly{
+  /* margin-left:  450px; */
+}
+
+/*  */
 
 
 
@@ -939,6 +1072,9 @@ p{
   }
   .projectImg{
     width: 80%;
+  }
+  .blenderProjects {
+    flex-direction: column;
   }
   
 
@@ -1069,7 +1205,19 @@ p{
       width: 120px;
       height: 120px;
     }
+    .descriptionProject {
+      position: relative;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 150px;
+  }
+    #blenderProjects {
+    flex-direction: column;
     
+}
+.sliderx{
+
+}
 }
  
 
@@ -1295,11 +1443,7 @@ p{
     margin-right: 2px;
 
   }
-  .container-flui{
-    
-   
-   
-  }
+  
   .downloadBtn {
     margin-bottom: 160px;
   }
@@ -1319,6 +1463,12 @@ p{
   #blend{
     width: auto;
   }
+  .descriptionProject {
+    
+    margin-left: 100%;
+    margin-right: 100%;
+   
+}
 
   
 
